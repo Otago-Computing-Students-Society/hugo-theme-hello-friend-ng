@@ -123,6 +123,10 @@ img {
   &.right {
     margin-left: auto;
   }
+  &.profile {
+    max-width: 25%;
+    margin: auto;
+  }
   &.circle {
     border-radius: 50%;
     max-width: 25%;
