@@ -1,7 +1,7 @@
 <footer class="footer">
     {{ if .Site.Params.footer.socials }}
     <div class="footer__inner">
-        <div class="footer__content">
+        <div class="footer__social-icons">
             {{- with .Site.Params.social }}
                 <div>
                     {{ partial "social-icons.html" . }}
