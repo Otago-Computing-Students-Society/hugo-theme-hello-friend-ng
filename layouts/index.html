@@ -13,6 +13,8 @@
 
             {{ partial "subtitle.html" . }}
 
+            {{ .Content }}
+
             {{ if not .Site.Params.footer.socials }}
                 {{- with .Site.Params.social }}
                     <div>
