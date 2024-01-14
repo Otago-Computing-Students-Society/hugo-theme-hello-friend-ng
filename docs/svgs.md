@@ -54,6 +54,7 @@
 - [npm](https://simpleicons.org/?q=npm)
 - [opencollective](https://simpleicons.org/?q=opencollective)
 - [orcid](https://simpleicons.org/?q=orcid)
+- ousa
 - [patreon](https://simpleicons.org/?q=patreon)
 - [paypal](https://simpleicons.org/?q=paypal)
 - [peertube](https://simpleicons.org/?q=peertube)
