@@ -13,7 +13,11 @@
 
             {{ partial "subtitle.html" . }}
 
-            {{ .Content }}
+            {{ if .Content }}
+                <div class="post">
+                    <div class="content">{{ .Content }}</div>
+                </div>
+            {{ end }}
 
             {{ if not .Site.Params.footer.socials }}
                 {{- with .Site.Params.social }}
