@@ -103,6 +103,7 @@ a.button,
   /*background-color: #fff;*/
   height: 48px;
   border-radius: 24px;
+  margin: 4px;
   font-weight: bold;
   display: inline-flex;
   vertical-align: middle;
@@ -170,6 +171,11 @@ a.button,
   &:active {
     transform: scale(0.95);
   }
+}
+
+p:has(> .pill-button):not(:has(> :not(.pill-button))) {
+  display: flex;
+  justify-content: center;
 }
 
 .code-toolbar {
