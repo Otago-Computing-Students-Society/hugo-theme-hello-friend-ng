@@ -178,6 +178,26 @@ p:has(> .pill-button):not(:has(> :not(.pill-button))) {
   justify-content: center;
 }
 
+/* Center a lone pill-button even when not wrapped in a <p> (e.g., after a heading) */
+h1 + .pill-button,
+h2 + .pill-button,
+h3 + .pill-button,
+h4 + .pill-button,
+h5 + .pill-button,
+h6 + .pill-button {
+  /* switch to a block-like element so auto margins work */
+  display: table;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Also center when it's the only child of a common container (not a <p>) */
+:where(div, section, article, main) > .pill-button:only-child {
+  display: table;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .code-toolbar {
   margin-bottom: 20px;
 
